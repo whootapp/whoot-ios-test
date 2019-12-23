@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		076FA03F23B0422900E18B13 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076FA03E23B0422900E18B13 /* Post.swift */; };
 		0782DF8123AAC1DA00CE6A8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DF8023AAC1DA00CE6A8B /* AppDelegate.swift */; };
 		0782DF8323AAC1DA00CE6A8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DF8223AAC1DA00CE6A8B /* SceneDelegate.swift */; };
-		0782DF8523AAC1DA00CE6A8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DF8423AAC1DA00CE6A8B /* ContentView.swift */; };
+		0782DF8523AAC1DA00CE6A8B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DF8423AAC1DA00CE6A8B /* MainView.swift */; };
 		0782DF8723AAC1DB00CE6A8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0782DF8623AAC1DB00CE6A8B /* Assets.xcassets */; };
 		0782DF8A23AAC1DB00CE6A8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0782DF8923AAC1DB00CE6A8B /* Preview Assets.xcassets */; };
 		0782DF8D23AAC1DB00CE6A8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0782DF8B23AAC1DB00CE6A8B /* LaunchScreen.storyboard */; };
 		0782DF9823AAC1DC00CE6A8B /* whootTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DF9723AAC1DC00CE6A8B /* whootTests.swift */; };
 		0782DFA323AAC1DC00CE6A8B /* whootUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DFA223AAC1DC00CE6A8B /* whootUITests.swift */; };
+		0782DFB623AAC44800CE6A8B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DFB523AAC44800CE6A8B /* HomeView.swift */; };
+		0782DFB823AAC47700CE6A8B /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DFB723AAC47700CE6A8B /* ExploreView.swift */; };
+		0782DFBA23AAC48900CE6A8B /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DFB923AAC48900CE6A8B /* NotificationsView.swift */; };
+		0782DFBC23AAC49100CE6A8B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DFBB23AAC49100CE6A8B /* ProfileView.swift */; };
+		0782DFC023AACCB700CE6A8B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DFBF23AACCB700CE6A8B /* MainTabView.swift */; };
+		0782DFC223AAD1CF00CE6A8B /* PostFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DFC123AAD1CF00CE6A8B /* PostFilterView.swift */; };
+		0782DFC423AAD24300CE6A8B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DFC323AAD24300CE6A8B /* PostCell.swift */; };
+		0782DFCA23AC263400CE6A8B /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DFC923AC263400CE6A8B /* Buttons.swift */; };
+		0782DFCD23ADC65000CE6A8B /* PostDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DFCC23ADC65000CE6A8B /* PostDetailCell.swift */; };
+		07D0CCB823AF44DD0013D04E /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D0CCB723AF44DD0013D04E /* PostDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0782DF7D23AAC1DA00CE6A8B /* whoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		076FA03E23B0422900E18B13 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		0782DF7D23AAC1DA00CE6A8B /* Whoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0782DF8023AAC1DA00CE6A8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0782DF8223AAC1DA00CE6A8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0782DF8423AAC1DA00CE6A8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0782DF8423AAC1DA00CE6A8B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0782DF8623AAC1DB00CE6A8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0782DF8923AAC1DB00CE6A8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0782DF8C23AAC1DB00CE6A8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +61,16 @@
 		0782DF9E23AAC1DC00CE6A8B /* whootUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whootUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0782DFA223AAC1DC00CE6A8B /* whootUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whootUITests.swift; sourceTree = "<group>"; };
 		0782DFA423AAC1DC00CE6A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0782DFB523AAC44800CE6A8B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0782DFB723AAC47700CE6A8B /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		0782DFB923AAC48900CE6A8B /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		0782DFBB23AAC49100CE6A8B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0782DFBF23AACCB700CE6A8B /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		0782DFC123AAD1CF00CE6A8B /* PostFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFilterView.swift; sourceTree = "<group>"; };
+		0782DFC323AAD24300CE6A8B /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		0782DFC923AC263400CE6A8B /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		0782DFCC23ADC65000CE6A8B /* PostDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailCell.swift; sourceTree = "<group>"; };
+		07D0CCB723AF44DD0013D04E /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		076FA03D23B0421B00E18B13 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				076FA03E23B0422900E18B13 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0782DF7423AAC1DA00CE6A8B = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +119,7 @@
 		0782DF7E23AAC1DA00CE6A8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0782DF7D23AAC1DA00CE6A8B /* whoot.app */,
+				0782DF7D23AAC1DA00CE6A8B /* Whoot.app */,
 				0782DF9323AAC1DC00CE6A8B /* whootTests.xctest */,
 				0782DF9E23AAC1DC00CE6A8B /* whootUITests.xctest */,
 			);
@@ -99,9 +129,11 @@
 		0782DF7F23AAC1DA00CE6A8B /* whoot */ = {
 			isa = PBXGroup;
 			children = (
+				076FA03D23B0421B00E18B13 /* Models */,
+				0782DFB023AAC3ED00CE6A8B /* Modules */,
 				0782DF8023AAC1DA00CE6A8B /* AppDelegate.swift */,
 				0782DF8223AAC1DA00CE6A8B /* SceneDelegate.swift */,
-				0782DF8423AAC1DA00CE6A8B /* ContentView.swift */,
+				0782DF8423AAC1DA00CE6A8B /* MainView.swift */,
 				0782DF8623AAC1DB00CE6A8B /* Assets.xcassets */,
 				0782DF8B23AAC1DB00CE6A8B /* LaunchScreen.storyboard */,
 				0782DF8E23AAC1DB00CE6A8B /* Info.plist */,
@@ -136,6 +168,71 @@
 			path = whootUITests;
 			sourceTree = "<group>";
 		};
+		0782DFB023AAC3ED00CE6A8B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0782DFBE23AACC9E00CE6A8B /* Subviews */,
+				0782DFB123AAC3FA00CE6A8B /* Home */,
+				0782DFB223AAC40100CE6A8B /* Explore */,
+				0782DFB323AAC40700CE6A8B /* Notifications */,
+				0782DFB423AAC40D00CE6A8B /* Profile */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0782DFB123AAC3FA00CE6A8B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0782DFB523AAC44800CE6A8B /* HomeView.swift */,
+				0782DFC123AAD1CF00CE6A8B /* PostFilterView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0782DFB223AAC40100CE6A8B /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				0782DFB723AAC47700CE6A8B /* ExploreView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		0782DFB323AAC40700CE6A8B /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				0782DFB923AAC48900CE6A8B /* NotificationsView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		0782DFB423AAC40D00CE6A8B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0782DFBB23AAC49100CE6A8B /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		0782DFBD23AAC54B00CE6A8B /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				0782DFC323AAD24300CE6A8B /* PostCell.swift */,
+				0782DFCC23ADC65000CE6A8B /* PostDetailCell.swift */,
+				07D0CCB723AF44DD0013D04E /* PostDetailView.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		0782DFBE23AACC9E00CE6A8B /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				0782DFC923AC263400CE6A8B /* Buttons.swift */,
+				0782DFBD23AAC54B00CE6A8B /* Posts */,
+				0782DFBF23AACCB700CE6A8B /* MainTabView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,7 +250,7 @@
 			);
 			name = whoot;
 			productName = whoot;
-			productReference = 0782DF7D23AAC1DA00CE6A8B /* whoot.app */;
+			productReference = 0782DF7D23AAC1DA00CE6A8B /* Whoot.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0782DF9223AAC1DC00CE6A8B /* whootTests */ = {
@@ -268,8 +365,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0782DF8123AAC1DA00CE6A8B /* AppDelegate.swift in Sources */,
+				0782DFB623AAC44800CE6A8B /* HomeView.swift in Sources */,
+				0782DFC023AACCB700CE6A8B /* MainTabView.swift in Sources */,
+				0782DFCA23AC263400CE6A8B /* Buttons.swift in Sources */,
+				0782DFCD23ADC65000CE6A8B /* PostDetailCell.swift in Sources */,
+				076FA03F23B0422900E18B13 /* Post.swift in Sources */,
 				0782DF8323AAC1DA00CE6A8B /* SceneDelegate.swift in Sources */,
-				0782DF8523AAC1DA00CE6A8B /* ContentView.swift in Sources */,
+				0782DF8523AAC1DA00CE6A8B /* MainView.swift in Sources */,
+				0782DFC223AAD1CF00CE6A8B /* PostFilterView.swift in Sources */,
+				07D0CCB823AF44DD0013D04E /* PostDetailView.swift in Sources */,
+				0782DFB823AAC47700CE6A8B /* ExploreView.swift in Sources */,
+				0782DFBC23AAC49100CE6A8B /* ProfileView.swift in Sources */,
+				0782DFC423AAD24300CE6A8B /* PostCell.swift in Sources */,
+				0782DFBA23AAC48900CE6A8B /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,8 +551,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.whoot.whoot;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whoot.whootapp;
+				PRODUCT_NAME = Whoot;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,8 +571,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.whoot.whoot;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whoot.whootapp;
+				PRODUCT_NAME = Whoot;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

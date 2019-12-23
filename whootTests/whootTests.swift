@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import whoot
+@testable import Whoot
 
 class whootTests: XCTestCase {
 
