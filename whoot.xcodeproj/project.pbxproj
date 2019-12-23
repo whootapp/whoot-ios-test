@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		076FA03F23B0422900E18B13 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076FA03E23B0422900E18B13 /* Post.swift */; };
+		076FA04123B0727700E18B13 /* ProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076FA04023B0727700E18B13 /* ProfileInfo.swift */; };
 		0782DF8123AAC1DA00CE6A8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DF8023AAC1DA00CE6A8B /* AppDelegate.swift */; };
 		0782DF8323AAC1DA00CE6A8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DF8223AAC1DA00CE6A8B /* SceneDelegate.swift */; };
 		0782DF8523AAC1DA00CE6A8B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DF8423AAC1DA00CE6A8B /* MainView.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		076FA03E23B0422900E18B13 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		076FA04023B0727700E18B13 /* ProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfo.swift; sourceTree = "<group>"; };
 		0782DF7D23AAC1DA00CE6A8B /* Whoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0782DF8023AAC1DA00CE6A8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0782DF8223AAC1DA00CE6A8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				0782DFBB23AAC49100CE6A8B /* ProfileView.swift */,
+				076FA04023B0727700E18B13 /* ProfileInfo.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076FA04123B0727700E18B13 /* ProfileInfo.swift in Sources */,
 				0782DF8123AAC1DA00CE6A8B /* AppDelegate.swift in Sources */,
 				0782DFB623AAC44800CE6A8B /* HomeView.swift in Sources */,
 				0782DFC023AACCB700CE6A8B /* MainTabView.swift in Sources */,
