@@ -17,6 +17,14 @@ struct Buttons: View {
                     Image(systemName: "hand.thumbsup")
                     Text("Like")
                 }
+            }.buttonStyle(Gray())
+                .padding()
+            
+            Button(action: {}) {
+                HStack {
+                    Image(systemName: "hand.thumbsup")
+                    Text("Like")
+                }
             }.buttonStyle(Tint())
                 .padding()
             
@@ -33,6 +41,14 @@ struct Buttons: View {
                     Image(systemName: "hand.thumbsup")
                     Text("Like")
                 }
+            }.buttonStyle(RoundedOutline())
+                .padding()
+            
+            Button(action: {}) {
+                HStack {
+                    Image(systemName: "hand.thumbsup")
+                    Text("Like")
+                }
             }.buttonStyle(CapsuleFill())
                 .padding()
             
@@ -41,17 +57,17 @@ struct Buttons: View {
                     Image(systemName: "hand.thumbsup")
                     Text("Like")
                 }
-            }.buttonStyle(RoundedFillBlock())
+            }.buttonStyle(CapsuleOutline())
                 .padding()
             
-            Button(action: {}) {
-                HStack {
-                    Image(systemName: "hand.thumbsup")
-                    Text("Like")
-                }
-            }.buttonStyle(CapsuleFillBlock())
-                .padding()
         }
+    }
+}
+
+public struct Gray: ButtonStyle {
+    public func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .foregroundColor(.gray)
     }
 }
 
@@ -65,40 +81,46 @@ public struct Tint: ButtonStyle {
 public struct RoundedFill: ButtonStyle {
     public func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
-        .padding()
+        .padding([.top, .bottom], 10)
+        .padding([.leading, .trailing])
         .background(Color("Tint"))
         .foregroundColor(.white)
         .cornerRadius(8)
     }
 }
 
-public struct RoundedFillBlock: ButtonStyle {
+public struct RoundedOutline: ButtonStyle {
     public func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
-        .padding()
-        .frame(minWidth: 0, maxWidth: .infinity)
-        .background(Color("Tint"))
-        .foregroundColor(.white)
-        .cornerRadius(8)
+        .padding([.top, .bottom], 10)
+        .padding([.leading, .trailing])
+        .foregroundColor(Color("Tint"))
+        .overlay(
+            RoundedRectangle(cornerRadius: 8)
+                .stroke(Color("Tint"))
+        )
     }
 }
 
 public struct CapsuleFill: ButtonStyle {
     public func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
-        .padding()
+        .padding([.top, .bottom], 10)
+        .padding([.leading, .trailing])
         .background(Capsule().fill(Color("Tint")))
         .foregroundColor(.white)
     }
 }
 
-public struct CapsuleFillBlock: ButtonStyle {
+public struct CapsuleOutline: ButtonStyle {
     public func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
-        .padding()
-        .frame(minWidth: 0, maxWidth: .infinity)
-        .background(Capsule().fill(Color("Tint")))
-        .foregroundColor(.white)
+        .padding([.top, .bottom], 10)
+        .padding([.leading, .trailing])
+        .foregroundColor(Color("Tint"))
+        .overlay(
+            Capsule().stroke(Color("Tint"))
+        )
     }
 }
 
