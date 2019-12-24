@@ -39,7 +39,7 @@ struct PostDetailCell: View {
                 
                 Text("9:41 AM • January 1, 2020")
                 .foregroundColor(.secondary)
-            }.padding([.top, .leading, .trailing])
+            }.padding(.top)
             
             Divider().padding(.bottom, 5)
             
@@ -111,7 +111,7 @@ struct PostDetailCell: View {
             }.padding(.top, 5)
             .padding([.leading, .trailing])
             
-            Divider().padding(.top, 5)
+//            Divider().padding(.top, 5)
             
             Spacer()
         }

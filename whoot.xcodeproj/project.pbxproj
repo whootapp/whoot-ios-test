@@ -26,6 +26,7 @@
 		0782DFC423AAD24300CE6A8B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DFC323AAD24300CE6A8B /* PostCell.swift */; };
 		0782DFCA23AC263400CE6A8B /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DFC923AC263400CE6A8B /* Buttons.swift */; };
 		0782DFCD23ADC65000CE6A8B /* PostDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DFCC23ADC65000CE6A8B /* PostDetailCell.swift */; };
+		07AE2EF523B1D268002DE642 /* BadgeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE2EF423B1D268002DE642 /* BadgeList.swift */; };
 		07D0CCB823AF44DD0013D04E /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D0CCB723AF44DD0013D04E /* PostDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		0782DFC323AAD24300CE6A8B /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		0782DFC923AC263400CE6A8B /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		0782DFCC23ADC65000CE6A8B /* PostDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailCell.swift; sourceTree = "<group>"; };
+		07AE2EF423B1D268002DE642 /* BadgeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeList.swift; sourceTree = "<group>"; };
 		07D0CCB723AF44DD0013D04E /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,6 +214,7 @@
 			children = (
 				0782DFBB23AAC49100CE6A8B /* ProfileView.swift */,
 				076FA04023B0727700E18B13 /* ProfileInfo.swift */,
+				07AE2EF423B1D268002DE642 /* BadgeList.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				076FA03F23B0422900E18B13 /* Post.swift in Sources */,
 				0782DF8323AAC1DA00CE6A8B /* SceneDelegate.swift in Sources */,
 				0782DF8523AAC1DA00CE6A8B /* MainView.swift in Sources */,
+				07AE2EF523B1D268002DE642 /* BadgeList.swift in Sources */,
 				0782DFC223AAD1CF00CE6A8B /* PostFilterView.swift in Sources */,
 				07D0CCB823AF44DD0013D04E /* PostDetailView.swift in Sources */,
 				0782DFB823AAC47700CE6A8B /* ExploreView.swift in Sources */,

@@ -17,22 +17,49 @@ struct ProfileInfo: View {
                     .padding(.trailing)
                 
                 VStack(alignment: .leading) {
-                    Text("John Doe")
-                        .font(.title)
-                        .fontWeight(.bold)
+                    HStack {
+                        Text("John Doe")
+                            .font(.system(size: 20))
+                            .fontWeight(.semibold)
+                        
+                        Image(systemName: "checkmark.shield.fill")
+                        .foregroundColor(.green)
+                    }
                     
-                    Text("10 Posts")
-                        .foregroundColor(.secondary)
+                    
+                    
+                    HStack {
+                        Text("123 Posts")
+                        Text("•")
+                        Text("1,234 points")
+                    }.padding(.top, -5)
+                    .foregroundColor(.secondary)
+                    
                 }
                 
                 Spacer()
-                
-                Image(systemName: "checkmark.shield.fill")
-                .foregroundColor(.green)
-                .font(.system(size: 24))
+
             }
             
-            Spacer()
+            VStack(alignment: .leading) {
+                Text("About Me")
+                    .font(.system(size: 20))
+                    .fontWeight(.bold)
+                    .padding(.bottom, 5)
+                
+                Text("Hello world, welcome to my profile!")
+                
+                Button(action: {}) {
+                    HStack {
+                        Image(systemName: "person.crop.circle")
+                        
+                        Text("Edit Profile")
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                }.buttonStyle(RoundedOutline())
+                
+                Divider()
+            }.padding([.top, .bottom], 5)
             
         }.padding()
     }

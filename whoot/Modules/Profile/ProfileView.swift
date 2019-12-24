@@ -11,12 +11,20 @@ import SwiftUI
 struct ProfileView: View {
     var body: some View {
         NavigationView {
-            ProfileInfo()
+            ScrollView {
+                VStack {
+                    ProfileInfo()
+                    BadgeList()
+
+                    
+                    Spacer()
+                }
                 .navigationBarTitle(Text("Profile"), displayMode: .inline)
-            .navigationBarItems(trailing: Button(action: {}) {
-                Image(systemName: "gear")
-                    .font(.system(size: 20))
-            })
+                .navigationBarItems(trailing: Button(action: {}) {
+                    Image(systemName: "gear")
+                        .font(.system(size: 20))
+                })
+            }
         }.accentColor(Color("Tint"))
     }
 }

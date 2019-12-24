@@ -12,6 +12,7 @@ struct PostCell: View {
     var post = Post()
     
     var body: some View {
+        
         HStack(alignment: .top) {
             Circle()
             .frame(width: 45, height: 45)
@@ -41,45 +42,34 @@ struct PostCell: View {
                 
                 HStack {
                     
+                    Button(action: {}) {
+                        HStack {
+                            Image(systemName: "bubble.left")
+                            Text("\(post.getCommentCount())")
+                        }
+                    }.buttonStyle(Gray())
+                    
+                    Spacer()
+                    
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                         HStack {
                             Image(systemName: "hand.thumbsup")
                             Text("\(post.getUpvotes())")
-                                .foregroundColor(.primary)
                         }
-                    }.buttonStyle(Tint())
-                    
-                    Spacer()
+                    }.buttonStyle(Gray())
+                    .padding(.trailing)
 
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                         HStack {
                             Image(systemName: "hand.thumbsdown")
                                 .offset(x: 0, y: 2)
                             Text("\(post.getDownvotes())")
-                                .foregroundColor(.primary)
                         }
-                    }.buttonStyle(Tint())
+                    }.buttonStyle(Gray())
                     
-                    Spacer()
-                    
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                        HStack {
-                            Image(systemName: "bubble.left")
-                            Text("\(post.getCommentCount())")
-                                .foregroundColor(.primary)
-                        }
-                    }.buttonStyle(Tint())
-                    
-                    Spacer()
-                    
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                        HStack {
-                            Image(systemName: "bookmark")
-                        }
-                    }.buttonStyle(Tint())
-                    
-                }
+                }.font(.system(size: 18))
             }
+            
         }.padding(.top, 6)
     }
 }
