@@ -14,7 +14,7 @@ struct HomeView: View {
             List {
                 PostFilterView()
                 
-                ForEach((1...10), id: \.self) {_ in
+                ForEach((1...5), id: \.self) {_ in
                     
                     VStack {
                         PostCell()

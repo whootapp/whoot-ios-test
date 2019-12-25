@@ -28,6 +28,7 @@
 		0782DFCD23ADC65000CE6A8B /* PostDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782DFCC23ADC65000CE6A8B /* PostDetailCell.swift */; };
 		07AE2EF523B1D268002DE642 /* BadgeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE2EF423B1D268002DE642 /* BadgeList.swift */; };
 		07D0CCB823AF44DD0013D04E /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D0CCB723AF44DD0013D04E /* PostDetailView.swift */; };
+		07EE3C6923B40547001BA8C3 /* PostActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EE3C6823B40547001BA8C3 /* PostActions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		0782DFCC23ADC65000CE6A8B /* PostDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailCell.swift; sourceTree = "<group>"; };
 		07AE2EF423B1D268002DE642 /* BadgeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeList.swift; sourceTree = "<group>"; };
 		07D0CCB723AF44DD0013D04E /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		07EE3C6823B40547001BA8C3 /* PostActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostActions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 		0782DFBD23AAC54B00CE6A8B /* Posts */ = {
 			isa = PBXGroup;
 			children = (
+				07EE3C6823B40547001BA8C3 /* PostActions.swift */,
 				0782DFC323AAD24300CE6A8B /* PostCell.swift */,
 				0782DFCC23ADC65000CE6A8B /* PostDetailCell.swift */,
 				07D0CCB723AF44DD0013D04E /* PostDetailView.swift */,
@@ -377,6 +380,7 @@
 				0782DFCA23AC263400CE6A8B /* Buttons.swift in Sources */,
 				0782DFCD23ADC65000CE6A8B /* PostDetailCell.swift in Sources */,
 				076FA03F23B0422900E18B13 /* Post.swift in Sources */,
+				07EE3C6923B40547001BA8C3 /* PostActions.swift in Sources */,
 				0782DF8323AAC1DA00CE6A8B /* SceneDelegate.swift in Sources */,
 				0782DF8523AAC1DA00CE6A8B /* MainView.swift in Sources */,
 				07AE2EF523B1D268002DE642 /* BadgeList.swift in Sources */,

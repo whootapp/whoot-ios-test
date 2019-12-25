@@ -21,99 +21,45 @@ struct PostDetailCell: View {
                     
                     VStack(alignment: .leading) {
                         HStack {
-                                Text("John Doe")
+                                Text(post.getDisplayName())
                                     .fontWeight(.semibold)
                                 Image(systemName: "checkmark.shield.fill")
                                     .foregroundColor(.green)
                         }
                         
-                        Text("My Group Name")
-                        .padding(.top, -8)
+                        HStack {
+                            Image(systemName: "person.2.fill")
+                            Text(post.getRoomName())
+                        }.padding(.top, -10)
                         .foregroundColor(.secondary)
-                        .font(.system(size: 15))
+                            .font(.system(size: 15))
                     }
-                }.padding(.bottom)
+                }
                 
                 Text(post.getBody())
-                    .padding(.bottom)
-                
-                Text("9:41 AM • January 1, 2020")
-                .foregroundColor(.secondary)
             }.padding(.top)
+            
+            PostActions()
             
             Divider().padding(.bottom, 5)
             
-            HStack {
-                
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                    HStack {
-                        Image(systemName: "hand.thumbsup")
-                    }
-                }.buttonStyle(Tint())
-                
-                Spacer()
-
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                    HStack {
-                        Image(systemName: "hand.thumbsdown")
-                            .offset(x: 0, y: 2)
-                    }
-                }.buttonStyle(Tint())
-                
-                Spacer()
-                
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                    HStack {
-                        Image(systemName: "bubble.left")
-                    }
-                }.buttonStyle(Tint())
-                
-                Spacer()
-                
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                    HStack {
-                        Image(systemName: "bookmark")
-                    }
-                }.buttonStyle(Tint())
-                
-                Spacer()
+            Text(post.getDateCreatedString())
+            .foregroundColor(.secondary)
+            
+            Divider()
+            
+            VStack(alignment: .leading) {
+                Text("\(post.getCommentCount()) Comments")
+                   .font(.title)
+                   .fontWeight(.bold)
                 
                 Button(action: {}) {
-                    Image(systemName: "square.and.arrow.up")
-                        .offset(x: 0, y: -2)
+                    Text("Sorted by recent")
                 }.buttonStyle(Tint())
-                
-            }
-            .padding([.top, .bottom], 5)
-            .padding([.leading, .trailing], 20)
-            .font(.system(size: 20))
+            }.padding(.bottom, 5)
             
-            Divider().padding(.top, 5)
+//            Divider()
             
-            HStack {
-                HStack {
-                    Text("\(post.getUpvotes())")
-                        .fontWeight(.bold)
-                        .padding(.trailing, -2)
-                    Text("upvotes")
-                        .foregroundColor(.secondary)
-                }
-                
-                Spacer()
-                
-                HStack {
-                    Text("\(post.getDownvotes())")
-                        .fontWeight(.bold)
-                        .padding(.trailing, -2)
-                    Text("downvotes")
-                        .foregroundColor(.secondary)
-                }
-            }.padding(.top, 5)
-            .padding([.leading, .trailing])
-            
-//            Divider().padding(.top, 5)
-            
-            Spacer()
         }
     }
 }

@@ -13,7 +13,7 @@ struct PostDetailView: View {
         List {
             PostDetailCell()
             
-            ForEach((1...10), id: \.self) {_ in
+            ForEach((1...5), id: \.self) {_ in
                 
                 VStack {
                     PostCell()
@@ -23,7 +23,7 @@ struct PostDetailView: View {
                 }
             }
         }
-        .navigationBarTitle(Text("John's Whoot"), displayMode: .inline)
+        .navigationBarTitle(Text("Whoot Details"), displayMode: .inline)
         .navigationBarItems(trailing: Button(action: {}) {
             Image(systemName: "ellipsis")
                 .font(.system(size: 20))

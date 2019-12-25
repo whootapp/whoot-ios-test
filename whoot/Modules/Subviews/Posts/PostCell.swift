@@ -21,7 +21,7 @@ struct PostCell: View {
                 
                 VStack(alignment: .leading) {
                     HStack {
-                            Text("John Doe")
+                            Text(post.getDisplayName())
                                 .fontWeight(.semibold)
                             Image(systemName: "checkmark.shield.fill")
                                 .foregroundColor(.green)
@@ -32,42 +32,18 @@ struct PostCell: View {
                                 .foregroundColor(.secondary)
                     }
                     
-                    Text("My Long Group Name • Seaside, CA")
-                    .padding(.top, -8)
+                    HStack {
+                        Image(systemName: "person.2.fill")
+                        Text(post.getRoomName())
+                    }.padding(.top, -10)
                     .foregroundColor(.secondary)
-                    .font(.system(size: 15))
-                }.padding(.bottom)
+                        .font(.system(size: 15))
+                    
+                }.padding(.bottom, 5)
                 
                 Text(post.getBody())
                 
-                HStack {
-                    
-                    Button(action: {}) {
-                        HStack {
-                            Image(systemName: "bubble.left")
-                            Text("\(post.getCommentCount())")
-                        }
-                    }.buttonStyle(Gray())
-                    
-                    Spacer()
-                    
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                        HStack {
-                            Image(systemName: "hand.thumbsup")
-                            Text("\(post.getUpvotes())")
-                        }
-                    }.buttonStyle(Gray())
-                    .padding(.trailing)
-
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                        HStack {
-                            Image(systemName: "hand.thumbsdown")
-                                .offset(x: 0, y: 2)
-                            Text("\(post.getDownvotes())")
-                        }
-                    }.buttonStyle(Gray())
-                    
-                }.font(.system(size: 18))
+                PostActions(post: post)
             }
             
         }.padding(.top, 6)
