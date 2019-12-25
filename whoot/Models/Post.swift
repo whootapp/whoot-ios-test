@@ -14,14 +14,15 @@ class Post: Identifiable {
     // - MARK: Initialized Data
     
     var id: String = "qwertyuiop1234567890"
-    private var body: String = "Hello world!"
+    private var body: String = "Hello world! I'm writing a multiline post with a decent amount of text to see how it'd look on the home feed and detail view."
     private var userId: String = "qwertyuiop1234567890"
+    private var displayName: String = "John Appleseed"
     private var dateCreated: String = "2019-12-31T09:41:00-0800"
     private var location = CLLocationCoordinate2D(latitude: -121.80047099489886, longitude: 36.6552803339778)
     private var upvotes: Int = 0
     private var downvotes: Int = 0
     private var commentCount: Int = 0
-    private var roomName: String?
+    private var roomName: String? = "Cat Lovers"
     
     // - MARK: Getters & Setters
     
@@ -49,6 +50,14 @@ class Post: Identifiable {
         return userId
     }
     
+    func setDisplayName(displayName: String) {
+        self.displayName = displayName
+    }
+    
+    func getDisplayName() -> String {
+        return displayName
+    }
+    
     func setUpvotes(upvotes: Int) {
         self.upvotes = upvotes
     }
@@ -73,10 +82,27 @@ class Post: Identifiable {
         return commentCount
     }
     
+    func setRoomName(roomName: String?) {
+        if (roomName != nil) {
+            self.roomName = roomName
+        }
+    }
+    
+    func getRoomName() -> String {
+        if (roomName != nil) {
+            return roomName!
+        }
+        return ""
+    }
+    
     // - MARK: Date functions
     
     func setDateCreated(dateCreated: String) {
         self.dateCreated = dateCreated
+    }
+    
+    func getDateCreatedString() -> String {
+        return dateCreated
     }
     
     func getLongDate() -> String {
